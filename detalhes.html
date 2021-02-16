@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Perfume-</title>
+        <link rel="stylesheet" href="style.css">
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Titillium+Web:ital,wght@0,400;0,600;0,700;1,300&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css1">
+    </head>
+    <body>
+        <div class="container">
+            <div class="navbar">
+                <div class="logo">
+                    <img src="images/Tulipa-logo.png.gif" width="125px">
+                </div>
+                <nav>
+                    <ul id="MenuItems">
+                        <li><a href="">Home</a></li>
+                        <li><a href="">Products</a></li>
+                        <li><a href="">About</a></li>
+                        <li><a href="">Contact</a></li>
+                        <li><a href="">Account</a></li>
+                    </ul>
+                </nav>
+                <img src="images/cart.png" width="30px" height="30px">
+                <img src="images/menu.png" class="menu-icon" onclick="AlternarMenu()">
+            </div>
+        </div>
+        <!--Detalhes Do Produto-->
+        <div class="small-container detalhes-produtos">
+            <div class="row">
+                <div class="col-2">
+                <img src="images/Category-1.jpg" width="100%" id="ProdutosImg">
+                
+                <div class="small-img-row">
+                    <div class="small-img-col">
+                        <img src="images/gallery-1.jpg" width="100%" class="small-img">
+                    </div>
+                    <div class="small-img-col">
+                        <img src="images/gallery-2.jpg" width="100%" class="small-img">
+                    </div>
+                    <div class="small-img-col">
+                        <img src="images/gallery-3.jpg" width="100%" class="small-img">
+                    </div>
+                    <div class="small-img-col">
+                        <img src="images/gallery-4.jpg" width="100%" class="small-img">
+                    </div>
+                </div>
+
+
+                </div>
+
+                <div class="col-2">
+                    <p>Inicio / Perfume</p>
+                    <h1>Perfume </h1>
+                    <h4>R$50.00</h4>
+                    <input type="number" value="1">
+                    <a href="carrinho.html" class="btn">Adicionar ao Carrinho</a>
+                    <h3>Detalhes Do Produto <i class="fa fa-indent"></i>
+                    </h3>
+                    <br>
+                    <p>Perfume contratipo 212 Vip Carolina Herrera Feminino</p>
+                </div>
+            </div>
+        </div>
+
+        <!--titulo-->
+        
+            <div class="row row-2">
+                <h2>Produtos Relacionados</h2>
+                <p>Veja Mais</p>
+            </div>
+    
+
+
+       <!--produtos relacionados-->
+           <div class="small-container">
+              <div class="row">
+                  <div class="col-4">
+                      <img src="images/product-9.jpg">
+                      <h4>Perfume</h4>
+                      <div class="rating">
+  
+                      </div>
+                      <p>R$50.00</p>
+                  </div>
+                  <div class="col-4">
+                    <img src="images/product-10.jpg">
+                    <h4>Perfume</h4>
+                    <div class="rating">
+  
+                    </div>
+                    <p>R$50.00</p>
+                </div>
+                <div class="col-4">
+                    <img src="images/product-11.jpg">
+                    <h4>Perfume</h4>
+                    <div class="rating">
+  
+                    </div>
+                    <p>R$50.00</p>
+                </div>
+                <div class="col-4">
+                    <img src="images/product-12.jpg">
+                    <h4>Perfume</h4>
+                    <div class="rating">
+  
+                    </div>
+                    <p>R$50.00</p>
+                </div>
+              </div>
+            </div>
+        <!-- Rodapé -->
+        <div class="rodapé">
+            <div class="container">
+                <div class="row">
+                    <div class="rodapé-col-1">
+                        <h3>Baixe nosso Aplicativo</h3>
+                        <p>Download Disponivel Para IOS e Android.</p>
+                        <div class="app-logo">
+                            <img src="images/play-store.png">
+                            <img src="images/app-store.png">
+                        </div>
+                    </div>
+                    <div class="rodapé-col-2">
+                        <img src="images/logo-white.png">
+                        <p>Nossa Proposta é Trazer De Forma Sustentável e Econômica  </p>
+                    </div>
+                    <div class="rodapé-col-3">
+                        <h3>Links Utilizáveis</h3>
+                        <ul>
+                            <li>Politica De Devoluções</li>
+                            <li>Cupons</li>
+                            <li>Sobre Nossos Produtos</li>
+                            <li>Torne-se Um Patrocinador</li>
+                        </ul>
+                    </div>
+                    <div class="rodapé-col-4">
+                        <h3>Nos Siga</h3>
+                        <ul>
+                            <li>Facebook</li>
+                            <li>Twitter</li>
+                            <li>Instagram</li>
+                            <li>Youtube</li>
+                        </ul>
+                    </div>
+                </div>
+                <hr>
+                <p class="Copyright">©2020 - Tulipa | Adega Perfumada</p>
+            </div>
+        </div>
+       <!-- js menu -->
+       <script>
+           var MenuItems = document.getElementById("MenuItems");
+           MenuItems.style.maxHeight = "0px";
+           function AlternarMenu(){
+                if(MenuItems.style.maxHeight == "0px")
+                {
+                    MenuItems.style.maxHeight = "200px"
+                }
+                else
+                {
+                    MenuItems.style.maxHeight = "0px"
+                }
+           }
+       </script>
+
+    <!--js galeria de produtos-->
+    <script>
+        var ProdutosImg = document.getElementById("ProdutosImg");
+         var smallImg = document.getElementsByClassName("small-img");
+         
+         smallImg[0].onclick = function(){
+            ProdutosImg.src =  smallImg[0].src;
+         }
+         smallImg[1].onclick = function(){
+            ProdutosImg.src =  smallImg[1].src;
+         }
+         smallImg[2].onclick = function(){
+            ProdutosImg.src =  smallImg[2].src;
+         }
+         smallImg[3].onclick = function(){
+            ProdutosImg.src =  smallImg[3].src;
+         }
+
+    </script>
+
+    </body>
+</html>
+
+
